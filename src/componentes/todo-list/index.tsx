@@ -40,10 +40,10 @@ const TodoList = () => {
 					{todos.map((todo, index) => (
 						<li className="listaTodo" key={todo.id}>
 							<div className="divCheckBox">
-								<input className="checkBox" type="checkbox" id={`checkbox-${todo.id}`} />
-								<label htmlFor={`checkbox-${todo.id}`} className="checkBoxLabel"></label>
+								<input className="checkBox" type="checkbox" />
 								<p className="titleTodo">{todo.title}</p>
 							</div>
+						
 							<button className="finalizarButton" onClick={() => concluiTodo(index)}>Concluir</button>
 						</li>
 					))}
