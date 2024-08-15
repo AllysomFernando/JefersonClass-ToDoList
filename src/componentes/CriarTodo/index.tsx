@@ -43,7 +43,6 @@ const CriarTodo = () => {
 								<input className="checkBox" type="checkbox" />
 								<p className="titleTodo">{todo.title}</p>
 							</div>
-						
 							<button className="finalizarButton" onClick={() => concluiTodo(index)}>Concluir</button>
 						</li>
 					))}
