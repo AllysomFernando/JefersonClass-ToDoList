@@ -71,7 +71,6 @@
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #ccc;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -84,7 +83,7 @@
     flex-direction: column;
 }
 
-.finalizarButton{
+.finalizarButton {
     background-color: #09766e;
     color: white;
     border: none;
@@ -98,7 +97,56 @@
     margin-bottom: 3rem;
     cursor: pointer;
     width: 30%;
-    &:hover {
-        background-color: #084e49;
+}
+
+.finalizarButton:hover {
+    background-color: #084e49;
+}
+
+.divCheckBox {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.checkBox {
+    display: none;
+}
+
+.checkBoxLabel {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.checkBox:checked + .checkBoxLabel + .titleTodo {
+    background-color: green;
+    animation: fillBackground 0.5s forwards;
+}
+
+@keyframes fillBackground {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: green;
     }
 }
+ 
+
+.checkbox{
+    margin-right: 40px;
+}
+
+.checkbox input[type="checkbox"]:checked{
+    background-color: #09766e;
+}
+
+.divCheckBox input[type="checkbox"]{
+    margin-right: 40px;
+}
+
