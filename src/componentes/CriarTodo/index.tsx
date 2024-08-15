@@ -6,7 +6,7 @@ type TodoListProps = {
 	title: string;
 };
 
-const TodoList = () => {
+const CriarTodo = () => {
 	const [todos, setTodos] = useState<TodoListProps[]>([]);
 	const [newTodo, setNewTodo] = useState<TodoListProps>({} as TodoListProps);
 
@@ -53,4 +53,4 @@ const TodoList = () => {
 	);
 };
 
-export { TodoList };
+export { CriarTodo };
