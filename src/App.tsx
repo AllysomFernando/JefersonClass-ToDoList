@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import { TodoList } from "./componentes/todo-list";
+import { CriarTodo } from "./componentes/CriarTodo";
 const App = () => {
 	return (
 		<div className="App">
-			<TodoList />
+			<CriarTodo />
 		</div>
 	);
 }
